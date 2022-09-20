@@ -1,4 +1,6 @@
-# Curso Qualidade de Software
+# Automação de UI com Cypress
+
+## Curso Qualidade de Software
 
 >Automação UI
 ![preview](./.github/preview.png)
