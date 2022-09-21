@@ -1,4 +1,4 @@
-class EndereçoPage {
+class EnderecoPage {
 
     editarEnderecoFaturamento(nome, sobrenome, empresa, pais, endereco, numero, cidade, estado, cep, telefone, email) {
         cy.get('.woocommerce-MyAccount-navigation-link--edit-address > a').click()
@@ -8,8 +8,8 @@ class EndereçoPage {
         cy.get('#billing_last_name').clear().type(sobrenome)
         cy.get('#billing_company').clear().type(empresa)
 
-        cy.get('#select2-billing_country-container').click().type(pais).get('[aria-selected="true"]').click()
-        cy.get('#billing_address_1').clear().type(endereco)
+        cy.get('#select2-billing_country-container').click().type('Brasil').get('[aria-selected="true"]').click()
+        cy.get('#billing_address_1').clear({force: true}).type(endereco)
         cy.get('#billing_address_2').clear().type(numero)
         cy.get('#billing_city').clear().type(cidade)
         cy.get('#select2-billing_state-container').click().type(estado +'{enter}')
@@ -25,4 +25,4 @@ class EndereçoPage {
 
 }
 
-export default new EndereçoPage()
+export default new EnderecoPage()
