@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cy: run":"npx cypress run --browser edge",
-    "cy:open":"npx cypress open",
-    "cy:report":"cypress run --record --key 6566a69f-13e6-4736-9c95-fe5e6123f7a4"
+    "cy: run": "npx cypress run --browser edge",
+    "cy:open": "npx cypress open",
+    "cy:report": "cypress run --record --key 6566a69f-13e6-4736-9c95-fe5e6123f7a4"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/Kellyfiocchi/teste-ebac-ui#readme",
   "devDependencies": {
-    "cypress": "^10.7.0"
+    "cypress": "^13.8.1"
   },
   "dependencies": {
     "faker": "^5.5.3"
